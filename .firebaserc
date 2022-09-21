@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "royal-crm-yinon": {
+      "hosting": {
+        "royal-crm": [
+          "royal-crm-yinon"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "royal-crm-yinon"
+  }
+}

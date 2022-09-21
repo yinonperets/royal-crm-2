@@ -1,0 +1,19 @@
+<page-header title="Edit contact" subtitle="Here you can edit your contact details" icon="fas fa-user-edit"
+  bgColor="alert-primary rounded-3 p-2">
+</page-header>
+
+<!-- <div *ngIf="dataReceived; else loader"> -->
+  <contact-form *ngIf="contact; else noContact" [contact]="contact" (reset)="resetForm()" (submit)="onSubmit($event)">
+  </contact-form>
+
+  <ng-template #noContact>{{
+  "Oops it looks like there is no contact with this ID in the database"
+    | textCapital
+}}</ng-template>
+<!-- </div> -->
+
+<!-- <ng-template #loader>
+  <spinner-loader></spinner-loader>
+</ng-template> -->
+
+
